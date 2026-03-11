@@ -1,0 +1,248 @@
+group_name,subcategory_name,subcategory_poi_count
+交通出行,Train Station,200428
+交通出行,Subway,41666
+交通出行,Bridge,8162
+交通出行,Bus Station,7965
+交通出行,Road,7528
+交通出行,Airport,2902
+交通出行,Gas Station / Garage,792
+交通出行,Ferry,226
+交通出行,Taxi,74
+公共服务,Embassy / Consulate,127
+其他,Other Great Outdoors,3298
+其他,Light Rail,2985
+其他,Convention Center,2229
+其他,Event Space,2209
+其他,Music Venue,1909
+其他,Concert Hall,1633
+其他,Bank,1359
+其他,General Entertainment,1250
+其他,Playground,1089
+其他,Historic Site,1070
+其他,Deli / Bodega,954
+其他,Art Gallery,904
+其他,Salon / Barbershop,825
+其他,Bowling Alley,811
+其他,Athletic & Sport,780
+其他,Parking,774
+其他,River,621
+其他,Sandwich Place,611
+其他,Neighborhood,589
+其他,General Travel,523
+其他,Other Nightlife,480
+其他,Fried Chicken Joint,444
+其他,Spiritual Center,347
+其他,Racetrack,305
+其他,Rest Area,298
+其他,Laundry Service,293
+其他,Military Base,265
+其他,Soup Place,254
+其他,Travel & Transport,204
+其他,Casino,202
+其他,Wings Joint,163
+其他,Moving Target,160
+其他,Brewery,157
+其他,Performing Arts Venue,146
+其他,Aquarium,112
+其他,Car Dealership,108
+其他,Comedy Club,99
+其他,Zoo,99
+其他,Gastropub,98
+其他,Travel Lounge,98
+其他,Recycling Facility,92
+其他,Outdoors & Recreation,90
+其他,Hot Dog Joint,88
+其他,Fair,78
+其他,Harbor / Marina,76
+其他,Professional & Other Places,69
+其他,Design Studio,69
+其他,Nightlife Spot,64
+其他,Breakfast Spot,63
+其他,Rental Car Location,62
+其他,Public Art,60
+其他,Bike Rental / Bike Share,53
+其他,Nail Salon,39
+其他,Winery,35
+其他,Sorority House,33
+其他,Planetarium,26
+其他,Photography Lab,24
+其他,Campground,23
+其他,Financial or Legal Service,21
+其他,Tanning Salon,20
+其他,Salad Place,19
+其他,Car Wash,19
+其他,Arts & Entertainment,13
+其他,Fraternity House,13
+其他,Newsstand,11
+其他,Castle,11
+其他,Taco Place,9
+其他,Storage Facility,8
+其他,Distillery,7
+其他,Animal Shelter,7
+其他,City,7
+其他,Burrito Place,6
+其他,Mac & Cheese Joint,2
+其他,Pet Service,2
+其他,Ski Area,1
+办公与居住,Office,8789
+办公与居住,College Academic Building,5981
+办公与居住,Government Building,5116
+办公与居住,Building,5036
+办公与居住,Home (private),3106
+办公与居住,Post Office,1291
+办公与居住,Residential Building (Apartment / Condo),472
+办公与居住,Factory,170
+办公与居住,Funeral Home,46
+办公与居住,Housing Development,12
+医疗健康,Medical Center,3280
+宗教与纪念,Shrine,2696
+宗教与纪念,Temple,1449
+宗教与纪念,Church,212
+宗教与纪念,Cemetery,193
+宗教与纪念,Mosque,23
+宗教与纪念,Synagogue,5
+教育文化,University,3486
+教育文化,Library,1085
+教育文化,School,783
+教育文化,High School,764
+教育文化,General College & University,656
+教育文化,Student Center,363
+教育文化,Elementary School,246
+教育文化,Trade School,196
+教育文化,Community College,148
+教育文化,Nursery School,107
+教育文化,Middle School,63
+教育文化,Medical School,60
+教育文化,College & University,30
+教育文化,Music School,24
+教育文化,Law School,17
+旅游与休闲,Park,7247
+旅游与休闲,Arcade,6153
+旅游与休闲,Gym / Fitness Center,3486
+旅游与休闲,Movie Theater,2763
+旅游与休闲,Hotel,1902
+旅游与休闲,Plaza,1490
+旅游与休闲,Stadium,1469
+旅游与休闲,Spa / Massage,1100
+旅游与休闲,Sculpture Garden,985
+旅游与休闲,Theater,556
+旅游与休闲,Art Museum,520
+旅游与休闲,Scenic Lookout,509
+旅游与休闲,Garden,432
+旅游与休闲,Beer Garden,294
+旅游与休闲,History Museum,275
+旅游与休闲,Museum,269
+旅游与休闲,Science Museum,242
+旅游与休闲,Pool,186
+旅游与休闲,Pool Hall,92
+旅游与休闲,Beach,44
+旅游与休闲,College Stadium,40
+旅游与休闲,Garden Center,23
+旅游与休闲,College Theater,6
+购物消费,Convenience Store,16833
+购物消费,Electronics Store,10897
+购物消费,Mall,10839
+购物消费,Bookstore,7418
+购物消费,Hobby Shop,4648
+购物消费,Miscellaneous Shop,4549
+购物消费,Department Store,4152
+购物消费,Clothing Store,2920
+购物消费,Drugstore / Pharmacy,2041
+购物消费,Video Store,1761
+购物消费,Record Shop,1474
+购物消费,Toy / Game Store,1401
+购物消费,Mobile Phone Shop,1340
+购物消费,Furniture / Home Store,1192
+购物消费,Smoke Shop,902
+购物消费,Sporting Goods Shop,772
+购物消费,Bike Shop,664
+购物消费,Hardware Store,613
+购物消费,Gift Shop,582
+购物消费,Donut Shop,564
+购物消费,Automotive Shop,556
+购物消费,Arts & Crafts Store,403
+购物消费,Candy Store,358
+购物消费,Video Game Store,327
+购物消费,Music Store,291
+购物消费,Camera Store,289
+购物消费,Paper / Office Supplies Store,258
+购物消费,Shop & Service,253
+购物消费,Ice Cream Shop,228
+购物消费,Cosmetics Shop,220
+购物消费,Flower Shop,176
+购物消费,Pet Store,157
+购物消费,Thrift / Vintage Store,96
+购物消费,Jewelry Store,95
+购物消费,Antique Shop,56
+购物消费,Cupcake Shop,43
+购物消费,Bagel Shop,36
+购物消费,Board Shop,31
+购物消费,Motorcycle Shop,20
+购物消费,Bridal Shop,16
+购物消费,Flea Market,10
+购物消费,Fish & Chips Shop,9
+购物消费,Market,4
+餐饮美食,Ramen /  Noodle House,17303
+餐饮美食,Japanese Restaurant,15680
+餐饮美食,Bar,14940
+餐饮美食,Food & Drink Shop,14023
+餐饮美食,Coffee Shop,8959
+餐饮美食,Café,8603
+餐饮美食,Fast Food Restaurant,6806
+餐饮美食,Chinese Restaurant,4718
+餐饮美食,Italian Restaurant,3029
+餐饮美食,Restaurant,2921
+餐饮美食,Indian Restaurant,2639
+餐饮美食,Diner,1851
+餐饮美食,BBQ Joint,1738
+餐饮美食,Sushi Restaurant,1679
+餐饮美食,Burger Joint,1289
+餐饮美食,Bakery,1264
+餐饮美食,Asian Restaurant,951
+餐饮美食,Dessert Shop,893
+餐饮美食,Dumpling Restaurant,891
+餐饮美食,Steakhouse,802
+餐饮美食,Korean Restaurant,708
+餐饮美食,Pizza Place,515
+餐饮美食,French Restaurant,493
+餐饮美食,American Restaurant,468
+餐饮美食,Thai Restaurant,467
+餐饮美食,Seafood Restaurant,429
+餐饮美食,Food,268
+餐饮美食,Gaming Cafe,261
+餐饮美食,Tea Room,256
+餐饮美食,Internet Cafe,242
+餐饮美食,Spanish Restaurant,187
+餐饮美食,Snack Place,156
+餐饮美食,Mexican Restaurant,127
+餐饮美食,German Restaurant,111
+餐饮美食,Food Truck,105
+餐饮美食,Vietnamese Restaurant,85
+餐饮美食,Vegetarian / Vegan Restaurant,66
+餐饮美食,Dim Sum Restaurant,58
+餐饮美食,Brazilian Restaurant,55
+餐饮美食,Caribbean Restaurant,49
+餐饮美食,Tapas Restaurant,49
+餐饮美食,Middle Eastern Restaurant,49
+餐饮美食,Mediterranean Restaurant,38
+餐饮美食,Australian Restaurant,26
+餐饮美食,Eastern European Restaurant,24
+餐饮美食,Turkish Restaurant,20
+餐饮美食,Scandinavian Restaurant,12
+餐饮美食,Cajun / Creole Restaurant,12
+餐饮美食,Latin American Restaurant,8
+餐饮美食,Malaysian Restaurant,8
+餐饮美食,Portuguese Restaurant,7
+餐饮美食,African Restaurant,6
+餐饮美食,South American Restaurant,6
+餐饮美食,Peruvian Restaurant,5
+餐饮美食,Cuban Restaurant,5
+餐饮美食,Ethiopian Restaurant,4
+餐饮美食,Moroccan Restaurant,3
+餐饮美食,Swiss Restaurant,2
+餐饮美食,Argentinian Restaurant,2
+餐饮美食,Southern / Soul Food Restaurant,1
+餐饮美食,Arepa Restaurant,1
+餐饮美食,Gluten-free Restaurant,1
+餐饮美食,Afghan Restaurant,1
+餐饮美食,Falafel Restaurant,1
