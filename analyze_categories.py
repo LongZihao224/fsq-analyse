@@ -9,7 +9,8 @@ DATASET_PATH = Path('dataset_TSMC2014_TKY.txt')
 OUTPUT_FINE_CSV = Path('category_counts.csv')
 OUTPUT_AGG_CSV = Path('category_group_counts.csv')
 OUTPUT_MAPPING_CSV = Path('category_group_mapping.csv')
-OUTPUT_CHART = Path('category_group_poi_counts.svg')
+OUTPUT_GROUP_CHART = Path('category_group_poi_counts.svg')
+OUTPUT_FINE_CHART = Path('category_poi_counts.svg')
 
 # 规则按顺序匹配，命中第一个即归类到对应大类
 GROUP_RULES: list[tuple[str, tuple[str, ...]]] = [
@@ -154,40 +155,39 @@ def write_mapping_csv(group_mapping: dict[str, list[tuple[str, int]]], output_pa
                 writer.writerow([group_name, sub_name, sub_count])
 
 
-def create_svg_bar_chart(group_counts: list[tuple[str, int]], output_path: Path) -> None:
-    if not group_counts:
+def create_svg_bar_chart(title: str, counts: list[tuple[str, int]], output_path: Path, label_x: int = 180) -> None:
+    if not counts:
         output_path.write_text('<svg xmlns="http://www.w3.org/2000/svg"></svg>', encoding='utf-8')
         return
 
-    margin_left = 180
     margin_right = 60
     margin_top = 50
     margin_bottom = 50
     bar_height = 34
     bar_gap = 14
 
-    n = len(group_counts)
+    n = len(counts)
     plot_height = n * (bar_height + bar_gap)
     chart_height = margin_top + plot_height + margin_bottom
     chart_width = 1100
 
-    max_count = max(count for _, count in group_counts)
-    usable_width = chart_width - margin_left - margin_right
+    max_count = max(count for _, count in counts)
+    usable_width = chart_width - label_x - margin_right
 
     lines: list[str] = []
     lines.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{chart_width}" height="{chart_height}">')
     lines.append('<style>text { font-family: Arial, sans-serif; font-size: 14px; }</style>')
     lines.append('<rect width="100%" height="100%" fill="white" />')
     lines.append(
-        f'<text x="{chart_width / 2}" y="30" text-anchor="middle" font-size="20" font-weight="bold">聚合后类别 POI 数量统计</text>'
+        f'<text x=\"{chart_width / 2}\" y=\"30\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\">{escape_xml(title)}</text>'
     )
 
-    for idx, (name, count) in enumerate(reversed(group_counts)):
+    for idx, (name, count) in enumerate(reversed(counts)):
         y = margin_top + idx * (bar_height + bar_gap)
         bar_width = 0 if max_count == 0 else (count / max_count) * usable_width
-        lines.append(f'<rect x="{margin_left}" y="{y}" width="{bar_width:.2f}" height="{bar_height}" fill="#4C78A8" />')
-        lines.append(f'<text x="{margin_left - 10}" y="{y + bar_height * 0.68}" text-anchor="end">{escape_xml(name)}</text>')
-        lines.append(f'<text x="{margin_left + bar_width + 8:.2f}" y="{y + bar_height * 0.68}">{count}</text>')
+        lines.append(f'<rect x="{label_x}" y="{y}" width="{bar_width:.2f}" height="{bar_height}" fill="#4C78A8" />')
+        lines.append(f'<text x="{label_x - 10}" y="{y + bar_height * 0.68}" text-anchor="end">{escape_xml(name)}</text>')
+        lines.append(f'<text x="{label_x + bar_width + 8:.2f}" y="{y + bar_height * 0.68}">{count}</text>')
 
     lines.append('</svg>')
     output_path.write_text('\n'.join(lines), encoding='utf-8')
@@ -211,7 +211,8 @@ def main() -> None:
     group_counts, group_mapping = aggregate_categories(fine_counts)
     write_group_csv(group_counts, OUTPUT_AGG_CSV)
     write_mapping_csv(group_mapping, OUTPUT_MAPPING_CSV)
-    create_svg_bar_chart(group_counts, OUTPUT_CHART)
+    create_svg_bar_chart('聚合后类别 POI 数量统计', group_counts, OUTPUT_GROUP_CHART, label_x=180)
+    create_svg_bar_chart('细分类别 POI 数量统计', fine_counts, OUTPUT_FINE_CHART, label_x=340)
 
     print(f'总记录数: {sum(count for _, count in fine_counts)}')
     print(f'细分类别总数: {len(fine_counts)}')
@@ -222,7 +223,8 @@ def main() -> None:
     print(f'已输出细分类统计: {OUTPUT_FINE_CSV}')
     print(f'已输出大类统计: {OUTPUT_AGG_CSV}')
     print(f'已输出聚合关系: {OUTPUT_MAPPING_CSV}')
-    print(f'已输出柱状图: {OUTPUT_CHART}')
+    print(f'已输出聚合柱状图: {OUTPUT_GROUP_CHART}')
+    print(f'已输出细分类柱状图: {OUTPUT_FINE_CHART}')
 
 
 if __name__ == '__main__':
